@@ -1,7 +1,7 @@
 import {create} from 'zustand'
 import {persist} from 'zustand/middleware'
 import { employeeApi } from '../api/employeeApi';
-const useEmployees=create(
+export const useEmployees=create(
     persist(
         //list all state variables then setter actions
         //dat,error,loading plus othe rprogress tracking variables
